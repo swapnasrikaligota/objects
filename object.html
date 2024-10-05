@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // object 1
+let validation = {
+  name: "swapnasri",
+  age: 20,
+  religion: "Hindu",
+
+  Gender:  "Female",
+  address: {
+    doorno: "1-9-14",
+    street: "Husnabad",
+    mandal: "Armoor",
+  },
+  pincode: 503224,
+};
+// object 2
+let validation2 = {
+    cast : "Bc-D",
+    name:"Swapnasri.k"
+};
+
+
+
+for(i in validation2){
+  count=0
+  for(j in validation){
+    if(i===j){
+      count++
+    }
+  }
+  if(count==0){
+    console.log(i ,"is not present")
+    validation[i]=validation2[i]
+  }
+
+}
+console.log(validation);
+</script>
+</body>
+</html>
